@@ -8,16 +8,20 @@ $scope.allsand = [];
 
 $scope.rave1=false;
 
-$scope.sendsand = function(){
-  //if($scope.sandchat.$valid){
-    console.log($scope.sandscript);
+$scope.regex = 'sandstorm';
+$scope.sendsand = function(e){
+  e.preventDefault();
+  if($scope.sandchat.$valid){
     sandsocket.emit('chat message', $scope.sandscript);
     $scope.sandscript = '';
     $scope.rave1=!$scope.rave1;
  // };
+ // };
+  } else {
+    alert("Did you mean to say 'Sandstorm'?");
+  }
 };
   sandsocket.on('chat message', function(message){
-    console.log('received on client');
     $scope.allsand.push(message);
     $scope.$apply();
 
