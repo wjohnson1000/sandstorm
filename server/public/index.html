@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>Sandstorm</title>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
-    <script type="text/javascript" src='public/javascripts/sandstorm.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src='javascripts/sandstorm.js'></script>
     <link rel="stylesheet" href="stylesheets/sandstorm.css" media="screen" title="no title" charset="utf-8">
   </head>
   <body ng-app='sand' ng-controller='storm'>
@@ -14,11 +14,13 @@
 
       </header>
       <div class="chat-window">
-
+        <ul>
+          <li ng-repeat='sand in allsand'>{{sand}}</li>
+        </ul>
       </div>
-      <form class="sand-chat">
-        <input type="text" name="name" value="">
-        <button type="button" name="button">Send</button>
+      <form class="sandchat">
+        <input type="text" name="name" ng-model='sandscript' required>
+        <button type="button" name="button" ng-model='send' ng-click='sendsand()'>Send</button>
       </form>
       <footer class="sand-footer">
       </footer>

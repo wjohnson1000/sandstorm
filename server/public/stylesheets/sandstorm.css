@@ -21,15 +21,19 @@ main {
   justify-content: center;
   background-color: beige;
 }
+ul {
+  list-style-type: none;
+}
 .chat-window {
   display: flex;
+  background-color: white;
   border: 1px solid gray;
   width: 60%;
   height: 400px;
   margin: 0 auto;
 }
 
-.sand-chat {
+.sandchat {
   width: 50%;
   display: flex;
   align-items: flex-start;
