@@ -5,6 +5,7 @@
     <title>Sandstorm</title>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
     <script type="text/javascript" src='javascripts/sandstorm.js'></script>
     <link rel="stylesheet" href="stylesheets/sandstorm.css" media="screen" title="no title" charset="utf-8">
   </head>
@@ -13,6 +14,13 @@
       <header class="sand-banner">
 
       </header>
+      <img class="rave1 animated infinite pulse" src="https://pbs.twimg.com/profile_images/545020428268212224/iT6nll1d.jpeg" ng-show="rave1"></img>
+
+      <audio autoplay>
+        <source src="audio/sandstorm.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="chat-window">
         <ul>
           <li ng-repeat='sand in allsand'>{{sand}}</li>
         </ul>

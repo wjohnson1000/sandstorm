@@ -53,3 +53,10 @@ button {
   background-color: yellow;
   margin-top: 50px;
 }
+
+.rave1  {
+  display: flex;
+  align-self: center;
+  height: 250px;
+  width: auto;
+}
