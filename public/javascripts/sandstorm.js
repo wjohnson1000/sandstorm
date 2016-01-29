@@ -18,7 +18,6 @@ $scope.sendsand = function(e){
   sandsocket.on('chat message', function(message){
     $scope.allsand.push(message);
     $scope.$apply();
-    
   });
   
 }]);

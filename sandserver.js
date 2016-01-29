@@ -6,7 +6,6 @@ require('dotenv').load();
 
 app.use(express.static(__dirname + '/public'));
 
-
 io.on('connection', function(socket){
   socket.on('chat message', function(message){
     console.log(message);
