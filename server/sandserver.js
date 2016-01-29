@@ -4,6 +4,8 @@ var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 app.use(express.static(__dirname + '/public'));
+
+
 io.on('connection', function(socket){
   socket.on('chat message', function(message){
     console.log(message);
