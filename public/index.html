@@ -18,9 +18,9 @@
           <li ng-repeat='sand in allsand'>{{sand}}</li>
         </ul>
       </div>
-      <form class="sandchat">
-        <input type="text" name="name" ng-model='sandscript' required>
-        <button type="button" name="button" ng-model='send' ng-click='sendsand()'>Send</button>
+      <form class="sandchat" name="sandchat">
+        <input type="text" name="sand" ng-model='sandscript' required>
+        <button type="button" name="button" ng-model='send' ng-click='sendsand()' ng-pattern='/(\bsandstorm\b)/'>Send</button>
       </form>
       <footer class="sand-footer">
       </footer>
