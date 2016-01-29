@@ -5,7 +5,7 @@ var sandsocket = io();
 sand.controller('storm', ['$scope', function($scope){
 
 $scope.allsand = [];
-
+$scope.regex = 'sandstorm'
 $scope.sendsand = function(){
   if($scope.sandchat.$valid){
     sandsocket.emit('chat message', $scope.sandscript);

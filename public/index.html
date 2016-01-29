@@ -19,8 +19,8 @@
         </ul>
       </div>
       <form class="sandchat" name="sandchat">
-        <input type="text" name="sand" ng-model='sandscript' required>
-        <button type="button" name="button" ng-model='send' ng-click='sendsand()' ng-pattern='/(\bsandstorm\b)/'>Send</button>
+        <input type="text" name="sand" ng-model='sandscript' required ng-pattern='regex'>
+        <button type="button" name="button" ng-model='send' ng-click='sendsand()'>Send</button>
       </form>
       <footer class="sand-footer">
       </footer>
