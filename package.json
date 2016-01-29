@@ -1,0 +1,19 @@
+{
+  "name": "sandstorm",
+  "version": "1.0.0",
+  "description": "sandstorm",
+  "main": "sandstorm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wjohnson1000/sandstorm.git"
+  },
+  "author": "billy & lou",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wjohnson1000/sandstorm/issues"
+  },
+  "homepage": "https://github.com/wjohnson1000/sandstorm#readme"
+}
