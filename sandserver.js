@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'));
 
 io.on('connection', function(socket){
   socket.on('chat message', function(message){
-    console.log(message);
+    socket.broadcast.emit('chat message', message);
     io.emit('chat message', message);
   });
 });
