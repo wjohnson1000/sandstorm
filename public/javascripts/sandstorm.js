@@ -8,7 +8,7 @@ $scope.allsand = [];
 
 $scope.rave1=false;
 
-$scope.regex = 'sandstorm';
+$scope.regex = '^sandstorm$';
 $scope.sendsand = function(e){
   e.preventDefault();
   if($scope.sandchat.$valid){
